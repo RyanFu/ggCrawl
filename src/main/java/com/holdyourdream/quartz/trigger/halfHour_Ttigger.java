@@ -12,7 +12,7 @@ public class halfHour_Ttigger{
                 .withIdentity("trigger1", "group1")
                 .startNow()
                 .withSchedule(simpleSchedule()
-                        .withIntervalInSeconds(1)
+                        .withIntervalInSeconds(60*5)
                         .repeatForever())            
                 .build();
 		

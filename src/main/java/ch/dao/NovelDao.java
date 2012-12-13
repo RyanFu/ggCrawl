@@ -30,7 +30,7 @@ public class NovelDao{
                    
                     transaction.commit();
             
-                    System.out.println("行不行");
+                    System.out.println("get all novels");
                 
                     session.close();
            

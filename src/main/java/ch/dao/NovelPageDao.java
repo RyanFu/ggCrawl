@@ -22,11 +22,12 @@ public class NovelPageDao {
         }
         public void insert(NovelPage nv){
         	try{
-                //transaction = session.beginTransaction();
+                transaction = session.beginTransaction();
                 session.save(nv);
-                //transaction.commit();
+                transaction.commit();
                 }catch(HibernateException e){
-                    //transaction.rollback();
+                	System.out.println("something wrong when insert page to db");
+                    transaction.rollback();
                     e.printStackTrace();
             }
         	//session.save(nv);
@@ -55,6 +56,28 @@ public class NovelPageDao {
                     transaction = session.beginTransaction();
                     
                     nps = session.createQuery("from NovelPage where isGet='false' and novel_Id='"+novelID+"'").list();
+//                    for(Iterator<NovelPage> ite = nps.iterator(); ite.hasNext();){
+//                    	NovelPage novel = ite.next();
+//                    	
+//                            System.out.println(novel.url);
+//                    }
+                    transaction.commit();
+            }catch(HibernateException e){
+                    transaction.rollback();
+                    e.printStackTrace();
+            } 
+			return nps;
+
+        }
+        public List<NovelPage> getAll(int novelID){
+        	List<NovelPage> nps=null;
+        	//Session session = HibernateUtil.getSessionFactory().openSession();
+            Transaction transaction = null;
+            
+            try{
+                    transaction = session.beginTransaction();
+                    
+                    nps = session.createQuery("from NovelPage where novel_Id='"+novelID+"'").list();
 //                    for(Iterator<NovelPage> ite = nps.iterator(); ite.hasNext();){
 //                    	NovelPage novel = ite.next();
 //                    	
