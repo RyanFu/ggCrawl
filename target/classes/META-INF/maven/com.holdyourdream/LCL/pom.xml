@@ -39,7 +39,7 @@
     <dependency>
     	<groupId>org.hibernate</groupId>
     	<artifactId>hibernate-core</artifactId>
-    	<version>4.1.8.Final</version>
+    	<version>4.1.9.Final</version>
     </dependency>
     <dependency>
     	<groupId>org.quartz-scheduler</groupId>
@@ -51,5 +51,44 @@
     	<artifactId>xmlrpc-client</artifactId>
     	<version>3.1.3</version>
     </dependency>
+    <dependency>
+    	<groupId>org.apache.commons</groupId>
+    	<artifactId>commons-io</artifactId>
+    	<version>1.3.2</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>slf4j-api</artifactId>
+    	<version>1.6.0</version>
+    </dependency>
+    <dependency>
+    	<groupId>javax.persistence</groupId>
+    	<artifactId>persistence-api</artifactId>
+    	<version>1.0</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>slf4j-nop</artifactId>
+    	<version>1.6.0</version>
+    </dependency>
+    <dependency>
+    	<groupId>jaxen</groupId>
+    	<artifactId>jaxen</artifactId>
+    	<version>1.1.4</version>
+    </dependency>
+    <dependency>
+    	<groupId>net.sourceforge.jchardet</groupId>
+    	<artifactId>jchardet</artifactId>
+    	<version>1.0</version>
+    </dependency>
   </dependencies>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>javax.persistence</groupId>
+  			<artifactId>persistence-api</artifactId>
+  			<version>1.0</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>

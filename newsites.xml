@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites site="1">
+    <site>
+    	<list_url>http://news.dayoo.com/guangzhou/</list_url>
+        <pre_url>http://news.dayoo.com/guangzhou/</pre_url>
+        <list_rule>div#m1_li ul li a</list_rule>
+        <title_rule>h1</title_rule>
+        <content_rule>div.content</content_rule>
+    </site>
+    <site>
+    	<list_url>http://city.sz.net.cn/</list_url>
+        <pre_url>http://city.sz.net.cn/</pre_url>
+        <list_rule>td[align=left] ul li a</list_rule>
+        <title_rule>h2</title_rule>
+        <content_rule>div#text</content_rule>
+    </site>
+</sites>

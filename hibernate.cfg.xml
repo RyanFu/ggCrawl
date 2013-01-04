@@ -11,6 +11,7 @@
         <property name="connection.useUnicode">true</property>
 		<property name="connection.characterEncoding">GB2312</property>
         <property name="connection.pool_size">1</property>
+        <property name="current_session_context_class">thread</property>
         <property name="connection.autoReconnect">true</property>
         <property name="connection.autoReconnectForPools">true</property>
         <property name="connection.is-connection-validation-required">true</property>
@@ -20,5 +21,7 @@
         <mapping class="ch.po.Student"/>
         <mapping class="ch.po.Novel"/>
         <mapping class="ch.po.NovelPage"/>
+        <mapping class="ch.po.Movie"/>
+        <mapping class="ch.po.PostTitle"/>
     </session-factory>
 </hibernate-configuration>

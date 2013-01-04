@@ -12,7 +12,7 @@ public class HibernateUtil {
         static{
                 try{
                 	String path=new File(".").getCanonicalPath();
-                        sessionFactory = new AnnotationConfiguration().configure(new File(path+"/hibernate.cfg.xml")).buildSessionFactory();
+                    sessionFactory = new AnnotationConfiguration().configure(new File(path+"/hibernate.cfg.xml")).buildSessionFactory();
                 }catch (Throwable ex) {
                         System.err.println("Initial SessionFactory creation failed." + ex);
                         throw new ExceptionInInitializerError(ex);
