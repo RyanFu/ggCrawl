@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blogs site="1">
+    <blog>
+    	<xmlRpcUrl>http://www.hfzyyx.com/xmlrpc.php</xmlRpcUrl>
+    	<userName>admin</userName>
+    	<password>guavaguava00</password>
+    	<cats>
+    		<cat>皇冠平台</cat>
+    		<cat>皇冠系统</cat>
+    		<cat>足球平台</cat>
+    		<cat>足球系统</cat>
+    		<cat>平台出租</cat>
+    		<cat>系统出租</cat>    		
+    	</cats>
+    </blog>
+</blogs>

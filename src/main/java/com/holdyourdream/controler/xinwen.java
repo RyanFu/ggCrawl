@@ -91,7 +91,7 @@ public class xinwen {
 		System.out.println("guava:over");
 	}
 	
-	public void getsAndSent(NewsSource ns) throws ParseException, IOException, XmlRpcException {
+	public void getsAndSent(NewsSource ns) throws ParseException, IOException, XmlRpcException, DocumentException {
 		System.out.print("is go?");
 		String list_url=ns.getList_url();
 		String pre_url=ns.getPre_url();
